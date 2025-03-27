@@ -1,0 +1,31 @@
+{
+  "name": "nodejs_tuhoc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minkang27/NodeJS_TuHoc.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Tự",
+    "học"
+  ],
+  "author": "MinKang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minkang27/NodeJS_TuHoc/issues"
+  },
+  "homepage": "https://github.com/minkang27/NodeJS_TuHoc#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
