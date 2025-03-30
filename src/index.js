@@ -5,6 +5,8 @@ const morgan = require('morgan');
 const handlebars = require('express-handlebars');
 const port = 3000
 
+const route = require('./routes');
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.urlencoded({
@@ -23,25 +25,11 @@ app.set('view engine', 'hbs');
 //console.log('PATH: ', path.join(__dirname, 'resources/views'));
 app.set('views', path.join(__dirname, 'resources/views'));
 
-app.get('/', (req, res) => {
-  res.render('home');
-});
+//Route init
+route(app);
 
-app.get('/news', (req, res) => {
-  //console.log(req.query.q);
-  res.render('news');
-});
 
-app.get('/trang-chu', (req, res) => res.send('Hello World!'));
 
-app.get('/search', (req, res) => {
-  res.render('search');
-});
-
-app.post('/search', (req, res) => {
-  console.log(req.body);
-  res.send('search');
-});
 
 
 // 127.0.0.1
